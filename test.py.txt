@@ -1,0 +1,6 @@
+from termcolor import colored cprint
+import emoji
+
+print(emoji.emojize"Python is thumb up")
+
+print("Hello from cmd")
