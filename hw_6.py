@@ -11,7 +11,7 @@ while True:
     search_input = int(input('Names - 1, Colors - 2, files - 3, emails - 4, exit - 5'))
     if search_input == 1:
 
-        names_list = re.findall(r'^(?:[A-Za-z]+[-\']?[A-Za-z]?[A-za-z]+\s)+', content)
+        names_list = re.findall(r'^(?:[A-Za-z]+[-\']?[A-Za-z]?[A-za-z]+\s+)', content)
         print(names_list)
         with open('names.txt', 'w') as file_1:
             for name in names_list:
